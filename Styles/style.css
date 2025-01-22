@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    
+body {
+    font-family: "Quicksand", serif;
+    margin-left: 141px;
+    margin-right: 141px;
+    background-color: #F7F7F7;
+}
+
+/* Navbar Start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo-image {
+    width: 46px;
+    height: 46px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.h {
+    color: #FEA301;
+}
+
+.a1 {
+    color: #01ACFD;
+}
+
+.f {
+    color: #05D4DF;
+}
+
+.a2 {
+    color: #5D58EF;
+}
+
+.contact-btn {
+    padding: 10px 60px;
+    background-color: #FEA301;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.mobile-hr {
+    display: none;
+}
+
+/* Mobile Menu Bar */
+.menu-bar {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-bar div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* Navbar Done */
+
+/* Banner Section Start */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.h1-banner {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.highlight-orange {
+    color: #FEA301;
+}
+
+.highlight-blue {
+    color: #01ACFD;
+}
+
+.p-banner {
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+.enroll-btn {
+    padding: 10px 47px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.banner-image {
+    width: 468.61px;
+    height: 575px;
+}
+
+/* Banner Section Done */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 27px;
+        margin-right: 27px;
+    }
+
+    /* Navbar start */
+    .nav-links,
+    .contact-btn {
+        display: none;
+    }
+
+    .logo-name {
+        display: none;
+    }
+
+    .menu-bar {
+        display: flex;
+    }
+
+    .mobile-hr {
+        display: block;
+        border: 0.5px solid #FEA301;
+        margin: 10px 0;
+    }
+
+    /* Navbar Done */
+
+    /* Banner Section Start */
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .h1-banner {
+        font-size: 32px;
+    }
+    /* Banner Section Done */
+}
