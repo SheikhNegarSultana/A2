@@ -2,13 +2,14 @@
     
 body {
     font-family: "Quicksand", serif;
-    margin-left: 141px;
-    margin-right: 141px;
+    
     background-color: #F7F7F7;
 }
 
 /* Navbar Start */
 .navbar {
+    margin-left: 141px;
+    margin-right: 141px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +93,8 @@ body {
 
 /* Banner Section Start */
 .banner {
+    margin-left: 141px;
+    margin-right: 141px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,20 +152,120 @@ body {
   
   #marquee-show {
     position: relative;
-    margin-left: -141px;
-    margin-right: -141px;
-}
+  }
 
 /* Marquee Section Done */
+
+
+/* Standard Curriculum Section Start */
+
+.curriculum {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .curriculum h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+
+  .container {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.kinder {
+    background: linear-gradient(to bottom, #DEF5FF 0%, #FFFFFF 50%);
+    border: 2px solid #DEF5FF;
+    border-radius: 10px;
+    padding: 54px 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.Elementary{
+    background: linear-gradient(to bottom, #FFF4DC 0%, #FFFFFF 50%);
+    border: 2px solid #FFF4DC; 
+    border-radius: 10px;
+    padding: 54px 20px;
+    text-align: center;
+    width: 250px;
+}
+.Middle {
+    background: linear-gradient(to bottom, #EEE1FF 0%, #FFFFFF 50%);
+    border: 2px solid #F2E8FF;
+    border-radius: 10px;
+    padding: 54px 20px;
+    text-align: center;
+    width: 250px;
+}
+
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: #808080;
+    font-weight: 400; 
+}
+
+.read-more1 {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #64C8FF;
+    font-weight: 600;
+}
+.read-more2 {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #F0AA00;
+    font-weight: 600;
+}
+.read-more3 {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #8700FF;
+    font-weight: 600;
+}
+
+
+  /* Arrows */
+  .arrows {
+    margin-top: 70px;
+  }
+  
+  .arrow-btn {
+    background-color: #FEA301;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 17px 22px;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  
+/*  Standard Curriculum Section Done */
 
 
 /* Responsive Design */
 @media (max-width: 768px) {
 
-    body {
-        margin-left: 27px;
-        margin-right: 27px;
-    }
+   
     #marquee-show {
         position: relative;
         margin-left: -27px;
@@ -172,6 +275,12 @@ body {
     .nav-links,
     .contact-btn {
         display: none;
+    }
+
+    .navbar , 
+    .banner{
+        margin-left: 27px;
+        margin-right: 27px;
     }
 
     .logo-name {
@@ -210,4 +319,20 @@ body {
         font-size: 32px;
     }
     /* Banner Section Done */
+
+    /* Standard Curriculum Start */
+    .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .kinder,
+      .Elementary,
+      .Middle {
+        width: 90%;
+      }
+      .arrows{
+        display: none;
+      }
+      /* Standard Curriculum Done */
 }
