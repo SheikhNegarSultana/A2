@@ -77,14 +77,10 @@ body {
 
 /* Mobile Menu Bar */
 .menu-bar {
-    font-size: 30px;
+    display: none;
 }
 
-.menu-bar div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-}
+
 
 /* Navbar Done */
 
@@ -476,7 +472,8 @@ footer {
     }
 
     .menu-bar {
-        display: flex;
+        display: block;
+        font-size: 30px;
     }
 
     .mobile-hr {
