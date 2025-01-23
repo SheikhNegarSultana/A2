@@ -77,10 +77,7 @@ body {
 
 /* Mobile Menu Bar */
 .menu-bar {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
+    font-size: 30px;
 }
 
 .menu-bar div {
