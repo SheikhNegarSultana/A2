@@ -326,6 +326,132 @@ footer {
 }
 /* Footer Done */
 
+/* Our Stories Start */
+
+.our-stories-bg{
+    background: url('../assets/bg.png'), linear-gradient(to top, #FEA301 0%, #FFFFFF 100%); 
+    background-size: cover;
+    padding: 60px 141px;
+}
+
+.story-h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.cards-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .main-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .main-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .main-card .content {
+    padding: 0 38px 68px;
+  }
+  
+ .main-card-date {
+    background: #3CD8E8; 
+    color: white;
+    padding: 14px 19px;
+    border-radius: 47px;
+    display: inline-block;
+    margin: 4px; 
+    position: relative;
+    top: -30px; 
+    left: 10px; 
+    z-index: 1; 
+  }
+  
+  .content h4{
+    margin: -20px 0;
+    margin-bottom: 2px;
+    padding: 0 6px;
+    font-size: 15px;
+    font-weight: bold;
+    
+  }
+
+  /* Grid Cards */
+
+  .date-1{
+    background: #95B226; 
+    color: white;
+    padding: 9px 19px;
+    border-radius: 47px;
+    display: inline-block;
+    margin: 7px; 
+    position: relative;
+    top: -30px; 
+    left: 10px; 
+    z-index: 1; 
+  }
+  .date-2{
+    background: #5D58F0; 
+    color: white;
+    padding: 9px 19px;
+    border-radius: 47px;
+    display: inline-block;
+    margin: 7px; 
+    position: relative;
+    top: -30px; 
+    left: 10px; 
+    z-index: 1; 
+  }
+
+  .grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .grid-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .grid-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .grid-card .content {
+    padding: 0 10px 10px;
+    
+  }
+ 
+  .view-all {
+    margin: 40px auto; 
+    margin-top: 80px;
+    padding: 10px 61px;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    display: block; 
+    text-align: center;
+}
+/* Our Stories Done */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -401,7 +527,7 @@ footer {
       }
       /* Standard Curriculum Done */
 
-      /* Footer Section */
+/* Footer Section Start */
       footer {
         padding: 20px;
     }
@@ -414,12 +540,43 @@ footer {
         flex-direction: column;
        align-items: self-start;
     }
-
+/* Footer Section Done*/
    
+.cards-section {
+    grid-template-columns: 2fr;
+  }
 
-    
 
-    
+  .main-card  {
+    display: none;
+  }
 
+  .our-stories-bg{
+    padding: 60px 16px;
+}
+
+.date-1{
+    padding: 5px 12px;
+    border-radius: 47px;
+    display: inline-block;
+    margin: 12px; 
+    font-size: 10px;
+  }
+  .date-2{
+    padding: 5px 12px;
+    border-radius: 47px;
+    display: inline-block;
+    margin: 12px; 
+    font-size: 10px;
+  }
+
+  .content h4{
+    margin: -20px 0;
+    margin-bottom: 2px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
     
 }
